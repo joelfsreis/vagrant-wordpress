@@ -1,0 +1,9 @@
+---
+- name: install php
+  apt: name=php5 state=present
+
+- name: install php5-curl
+  apt: name=php5-curl state=present
+
+- name: install php5-mysqlnd
+  apt: name=php5-mysql state=present

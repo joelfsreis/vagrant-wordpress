@@ -1,0 +1,19 @@
+---
+- name: install mysql
+  apt: name=mysql-server state=present
+
+- name: install mysql-client
+  apt: name=mysql-client state=present
+
+  # Create Database
+# - shell: mysql -u root -e "create database databasename"
+  # ignore_errors: yes
+
+  # User Password for Database access
+# - shell: mysql -u root -e "CREATE USER 'username'@'databasehost' IDENTIFIED BY 'password'"
+# - shell: mysql -u root -e "GRANT ALL ON *.* TO 'username'@'databasehost'"
+
+  # Copy database dump file to remote host and restore it to database
+# - copy: src=db-backup.sql dest=/tmp
+# - shell: mysql -u root databasename < /tmp/db-backup.sql
+#   ignore_errors: yes
