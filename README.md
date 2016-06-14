@@ -17,4 +17,5 @@ Fresh install of Wordpress with Vagrant+Ansible for development environment
     - Remove the # from lines under this section
 
 5. In the command shell launch Vagrant (vagrant up)
-6. Enjoy!
+6. Access in the browser under the address: 10.11.12.13
+7. Enjoy!
